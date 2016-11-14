@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <div id="div1">我是一个div</div>
+</body>
+<script type="text/javascript">
+// 第一个例子
+	window.name='globalName';
+	var getName=function(){
+		"use strict"
+		alert(this)
+		return this.name;
+	};
+	// console.log(getName());
+
+// window.id="window";
+// document.getElementById('div1').onclick=function () {
+// 	alert(this.id);
+// 	var that=this;
+// 	var callback=function(){
+// 		alert(that.id);
+// 	}
+// 	callback();
+// }
+</script>
+</html>
