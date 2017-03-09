@@ -1,5 +1,10 @@
 // 缓动算法
-
+/*
+t:动画已消耗的时间
+b:小球原始位置
+c:需要移动的距离
+d:动画持续时间
+*/
 var tween = {
 	linear: function(t, b, c, d) {
 		return c * t / d + b;
