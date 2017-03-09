@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	function Human(name){
+		this.name=name;
+	}
+	Human.prototype.say= function(first_argument) {
+		// body...
+		console.log("say");
+	};
+	function object(o){
+		var F=function(){};
+		F.prototype=o;
+		return new F();
+	}
+	function Man(name,age){
+		Human.call(this,name);
+		this.age=age;
+	}
+	Man.prototype=object(Human.prototype) //继承父元素的原型
+	Man.prototype.constructor=Man;
+
+	var man=new Man("Lee",22)
+	console.log(man);
+	man.say();
+</script>
+</html>
