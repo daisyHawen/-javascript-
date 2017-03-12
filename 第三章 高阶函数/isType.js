@@ -1,13 +1,10 @@
 var isString = function(obj) {
-	// body...
 	return Object.prototype.toString.call(obj) === '[object String]';
 }
 var isArray = function(obj) {
-	// body...
 	return Object.prototype.toString.call(obj) === '[object Array]';
 }
 var isNumer = function(obj) {
-	// body...
 	return Object.prototype.toString.call(obj) === '[object Number]';
 }
 console.log(isNumer(1));
